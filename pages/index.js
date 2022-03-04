@@ -103,7 +103,10 @@ const Home = () => {
         </Heading>
         <Paragraph>
           Art, Drawing,{' '}
-          <Link href="https://open.spotify.com/user/22uqfqyasviijy57kq2fnxv3a?si=591a37358eb34a77" target="_blank">
+          <Link
+            href="https://open.spotify.com/user/22uqfqyasviijy57kq2fnxv3a?si=591a37358eb34a77"
+            target="_blank"
+          >
             Music (here my spotify)
           </Link>
           , Playing Guitar,{' '}

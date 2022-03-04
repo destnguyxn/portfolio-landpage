@@ -21,7 +21,10 @@ const Main = ({ children, router }) => {
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content="/card.png" />
-        <meta property="og:site_name" content="Nguyen Pham Quang Dinh's Homepage" />
+        <meta
+          property="og:site_name"
+          content="Nguyen Pham Quang Dinh's Homepage"
+        />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="/card.png" />
         <title>Nguyen Pham Quang Dinh - Homepage</title>

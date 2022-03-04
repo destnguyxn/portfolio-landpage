@@ -25,7 +25,8 @@ const Work = () => (
         <Image src="/images/works/amembo_icon.png" alt="icon" />
       </Center>
       <P>
-      Provides a patient record management interface for the system of clinics.
+        Provides a patient record management interface for the system of
+        clinics.
       </P>
 
       <UnorderedList ml={4} my={4}>
@@ -44,10 +45,10 @@ const Work = () => (
         <ListItem>
           <Meta>Link</Meta>
           <span>
-          <Link href="https://ehealicords.vercel.app/" target={'_blank'}>
-            eHealicords
-            <ExternalLinkIcon mx="2px" />
-          </Link>
+            <Link href="https://ehealicords.vercel.app/" target={'_blank'}>
+              eHealicords
+              <ExternalLinkIcon mx="2px" />
+            </Link>
           </span>
         </ListItem>
       </List>

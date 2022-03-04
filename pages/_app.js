@@ -7,12 +7,12 @@ if (typeof window !== 'undefined') {
   window.history.scrollRestoration = 'manual'
 }
 
-const Website = ({ Component, pageProps, router}) => {
+const Website = ({ Component, pageProps, router }) => {
   return (
     <Chakra cookies={pageProps.cookies}>
-      <Fonts/>
-      <Layout router = {router}>
-      <AnimatePresence
+      <Fonts />
+      <Layout router={router}>
+        <AnimatePresence
           exitBeforeEnter
           initial={true}
           onExitComplete={() => {
@@ -28,4 +28,4 @@ const Website = ({ Component, pageProps, router}) => {
   )
 }
 
-export default Website;
+export default Website

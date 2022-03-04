@@ -17,9 +17,7 @@ const Posts = () => (
         Popular Posts
       </Heading>
 
-      <Section delay={0.5}>
-        Nothing here.
-      </Section>
+      <Section delay={0.5}>Nothing here.</Section>
 
       {/* <Section delay={0.1}>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>

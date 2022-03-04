@@ -14,14 +14,15 @@ const Works = () => (
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
-          <WorkGridItem id="ehealicords" title="eHealicords" thumbnail={thumbEHealicords}>
-          Provides a patient record management interface for the system of clinics.
+          <WorkGridItem
+            id="ehealicords"
+            title="eHealicords"
+            thumbnail={thumbEHealicords}
+          >
+            Provides a patient record management interface for the system of
+            clinics.
           </WorkGridItem>
         </Section>
-        
-
-        
-        
       </SimpleGrid>
 
       <Section delay={0.2}>
@@ -30,9 +31,7 @@ const Works = () => (
         <Heading as="h3" fontSize={20} mb={4}>
           Collaborations
         </Heading>
-        <Box mt={4}>
-          Nothing here.
-        </Box>
+        <Box mt={4}>Nothing here.</Box>
       </Section>
 
       {/* <SimpleGrid columns={[1, 1, 2]} gap={6}>
@@ -58,9 +57,7 @@ const Works = () => (
         <Heading as="h3" fontSize={20} mb={4}>
           Old works
         </Heading>
-        <Box mt={4}>
-          Nothing here.
-        </Box>
+        <Box mt={4}>Nothing here.</Box>
       </Section>
 
       {/* <SimpleGrid columns={[1, 1, 2]} gap={6}>
