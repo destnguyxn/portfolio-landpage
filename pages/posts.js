@@ -17,7 +17,11 @@ const Posts = () => (
         Popular Posts
       </Heading>
 
-      <Section delay={0.1}>
+      <Section delay={0.5}>
+        Nothing here.
+      </Section>
+
+      {/* <Section delay={0.1}>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
             title="My Fish workflow"
@@ -60,7 +64,7 @@ const Posts = () => (
             href="https://www.youtube.com/watch?v=vj723NlrIQc"
           />
         </SimpleGrid>
-      </Section>
+      </Section> */}
     </Container>
   </Layout>
 )

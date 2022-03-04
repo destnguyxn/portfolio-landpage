@@ -1,44 +1,85 @@
-import { Container, Box, Heading, Image, Button, Link, SimpleGrid, List, ListItem } from'@chakra-ui/react'
+import {
+  Container,
+  Box,
+  Heading,
+  Button,
+  Link,
+  SimpleGrid,
+  List,
+  ListItem,
+  chakra
+} from '@chakra-ui/react'
 import NextLink from 'next/link'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import { GridItem } from '../components/grid-item'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { BioSection, BioYear } from '../components/bio'
-import { IoLogoGithub } from "react-icons/io5";
+import { IoLogoGithub } from 'react-icons/io5'
 import thumbYouTube from '../public/images/links/youtube.png'
+import Image from 'next/image'
 
-const Page = () => {
+const ProfileImage = chakra(Image, {
+  shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
+})
+
+const Home = () => {
   return (
     <Container>
-      <Box borderRadius='lg' bg='gray' p = {3} mb = {6} align ='center'>
+      <Box borderRadius="lg" bg="gray" p={3} mb={6} align="center">
         Hello I&apos;m a full-stack developer based in Viet Nam!
       </Box>
-      <Box display={{md: 'flex'}}>
+      <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
-          <Heading as="h2" variant ="page-title">
+          <Heading as="h2" variant="page-title">
             Nguyen Pham Quang Dinh
           </Heading>
           <p>Digital Craftman ( Artist / Developer / Designer )</p>
         </Box>
-      <Box
-        flexShrink={0}
-        mt={{base:4, md:0}}
-        ml={{md:6}}
-        align="center"
-      >
-        <Image borderColor="whiteAlpha.800" borderWidth={2} borderStyle="solid" maxWidth="100px" display="inline-block" borderRadius="full" src="/images/me.jpg" alt="Profile Image"/>
-      </Box>
+        <Box
+          flexShrink={0}
+          mt={{ base: 4, md: 0 }}
+          ml={{ md: 2 }}
+          align="center"
+        >
+          <Box
+            borderColor="whiteAlpha.800"
+            borderWidth={2}
+            borderStyle="solid"
+            w="100px"
+            h="100px"
+            display="inline-block"
+            borderRadius="full"
+            overflow="hidden"
+          >
+            <ProfileImage
+              src="/images/me.jpg"
+              alt="Profile image"
+              borderRadius="full"
+              width="100%"
+              height="100%"
+            />
+          </Box>
+        </Box>
       </Box>
       <Section delay={0.1}>
-        <Heading as='h3' variant='section-title'>
+        <Heading as="h3" variant="section-title">
           Work
-        </Heading>  
-        <Paragraph>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</Paragraph>
-        <Box align='center' mt={4}>
-        <NextLink  href='/'>
-        <Button rightIcon={<ChevronRightIcon/>} colorScheme="teal">My Portfolio</Button>
-        </NextLink>
+        </Heading>
+        <Paragraph>
+          It has survived not only five centuries, but also the leap into
+          electronic typesetting, remaining essentially unchanged. It was
+          popularised in the 1960s with the release of Letraset sheets
+          containing Lorem Ipsum passages, and more recently with desktop
+          publishing software like Aldus PageMaker including versions of Lorem
+          Ipsum.
+        </Paragraph>
+        <Box align="center" mt={4}>
+          <NextLink href="/">
+            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+              My Portfolio
+            </Button>
+          </NextLink>
         </Box>
       </Section>
 
@@ -61,12 +102,12 @@ const Page = () => {
           I ♥
         </Heading>
         <Paragraph>
-          Art, Music,{' '}
-          <Link href="https://illust.odoruinu.net/" target="_blank">
-            Drawing
+          Art, Drawing,{' '}
+          <Link href="https://open.spotify.com/user/22uqfqyasviijy57kq2fnxv3a?si=591a37358eb34a77" target="_blank">
+            Music (here my spotify)
           </Link>
-          , Playing Drums,{' '}
-          <Link href="https://500px.com/p/craftzdog" target="_blank">
+          , Playing Guitar,{' '}
+          <Link href="https://www.eyeem.com/u/erudi" target="_blank">
             Photography
           </Link>
           , Leica, Machine Learning
@@ -78,23 +119,21 @@ const Page = () => {
         </Heading>
         <List>
           <ListItem>
-            <Link href="https://github.com/craftzdog" target="_blank">
+            <Link href="https://github.com/erudilumos" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<IoLogoGithub />}
               >
-                @craftzdog
+                @dest.nguyxn
               </Button>
             </Link>
           </ListItem>
-          
-          
         </List>
 
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
-            href="https://www.youtube.com/devaslife"
+            href="https://www.youtube.com/channel/UCa7k2ySSe-9fkNV3WcoGDgA"
             title="Dev as Life"
             thumbnail={thumbYouTube}
           >
@@ -114,4 +153,6 @@ const Page = () => {
   )
 }
 
-export default Page
+export default Home
+
+export { getServerSideProps } from '../components/chakra'
