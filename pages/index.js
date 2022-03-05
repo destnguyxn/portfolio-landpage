@@ -15,8 +15,8 @@ import Paragraph from '../components/paragraph'
 import { GridItem } from '../components/grid-item'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { BioSection, BioYear } from '../components/bio'
-import { IoLogoGithub } from 'react-icons/io5'
-import thumbYouTube from '../public/images/links/youtube.png'
+import { IoLogoGithub, IoLogoYoutube } from 'react-icons/io5'
+import thumbYouTube from '../public/images/links/youtube.jpeg'
 import Image from 'next/image'
 
 const ProfileImage = chakra(Image, {
@@ -67,15 +67,10 @@ const Home = () => {
           Work
         </Heading>
         <Paragraph>
-          It has survived not only five centuries, but also the leap into
-          electronic typesetting, remaining essentially unchanged. It was
-          popularised in the 1960s with the release of Letraset sheets
-          containing Lorem Ipsum passages, and more recently with desktop
-          publishing software like Aldus PageMaker including versions of Lorem
-          Ipsum.
+        I am a freelance and a full-stack developer based in Ho Chi Minh, Viet Nam with a passion for building digital services/stuffs.
         </Paragraph>
         <Box align="center" mt={4}>
-          <NextLink href="/">
+          <NextLink href="/works">
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
               My Portfolio
             </Button>
@@ -110,10 +105,10 @@ const Home = () => {
             Music (here my spotify)
           </Link>
           , Playing Guitar,{' '}
-          <Link href="https://www.eyeem.com/u/erudi" target="_blank">
+          <Link href="https://www.eyeem.com/u/destnguyxn" target="_blank">
             Photography
           </Link>
-          , Leica, Machine Learning
+          , Machine Learning
         </Paragraph>
       </Section>
       <Section delay={0.3}>
@@ -134,13 +129,14 @@ const Home = () => {
           </ListItem>
         </List>
 
+        <IoLogoYoutube/>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
             href="https://www.youtube.com/channel/UCa7k2ySSe-9fkNV3WcoGDgA"
-            title="Dev as Life"
+            title="hoping to make some video here soon..."
             thumbnail={thumbYouTube}
           >
-            My YouTube channel
+            
           </GridItem>
         </SimpleGrid>
 

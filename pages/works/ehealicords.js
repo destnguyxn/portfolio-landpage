@@ -22,7 +22,7 @@ const Work = () => (
         eHealicords <Badge>2021 - 2022</Badge>
       </Title>
       <Center my={6}>
-        <Image src="/images/works/amembo_icon.png" alt="icon" />
+        <Image src="/images/works/ehealicords.ico" alt="icon" />
       </Center>
       <P>
         Provides a patient record management interface for the system of
