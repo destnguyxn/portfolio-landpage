@@ -26,10 +26,10 @@ const ProfileImage = chakra(Image, {
 const Home = () => {
   return (
     <Container>
-      <Box borderRadius="lg" bg="gray" p={3} mb={6} align="center">
+      <Box borderRadius="lg" bg="gray" p={3} mb={6} align="center" zIndex={100}>
         Hello I&apos;m a full-stack developer based in Viet Nam!
       </Box>
-      <Box display={{ md: 'flex' }}>
+      <Box display={{ md: 'flex' }} zIndex={100}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
             Nguyen Pham Quang Dinh
@@ -62,6 +62,9 @@ const Home = () => {
           </Box>
         </Box>
       </Box>
+      <Box borderRadius={"12px"} >
+      
+      </Box>
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
           Work
@@ -77,7 +80,6 @@ const Home = () => {
           </NextLink>
         </Box>
       </Section>
-
       <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
           Bio
