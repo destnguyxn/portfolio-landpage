@@ -11,7 +11,6 @@ const SCToggleButton = () => {
   return (
     <AnimatePresence exitBeforeEnter initial={false}>
       <motion.div
-      
         style={{ display: 'inline-block', overflow:'hidden' }}
         key={useColorModeValue('light', 'dark')}
         initial={{ y: -20, opacity: 0 }}
@@ -26,7 +25,7 @@ const SCToggleButton = () => {
           icon={useColorModeValue(<IoLogoSoundcloud />, <IoLogoSoundcloud />)}
           onClick={()=>toggleSC(!showSC)}
         ></IconButton>
-      <Box display={showSC?"relative":"none"} position={"fixed"} right={0} bottom={0} ml={2}>
+      <Box display={showSC?"":"none"} position={"absolute"}  right={0} bottom={"-92vh"} mr={2} ml={2}>
       <iframe width="100%" height="80" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1000012141&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
       </Box>
       </motion.div>

@@ -14,14 +14,14 @@ export const DogSpinner = () => (
 
 export const DogContainer = forwardRef(({ children }, ref) => (
   <Box
+    _hover={{cursor: 'grab',cursor: '-webkit-grab' }}
     ref={ref}
-    className="voxel-dog"
+    className="robot-model"
     m="auto"
     mt={['-20px', '-60px', '-120px']}
     mb={['-40px', '-140px', '-192px']}
     w={[280, 480, 640]}
     h={[280, 480, 640]}
-
     position="relative"
   >
     {children}

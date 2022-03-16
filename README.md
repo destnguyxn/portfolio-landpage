@@ -19,6 +19,9 @@ $PROJECT_ROOT
 └── public
 ```
 
+## Work in Progress
+
+- Animated 3D Robot Model
 ## License
 
 MIT License.

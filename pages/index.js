@@ -17,6 +17,7 @@ import { ChevronRightIcon } from '@chakra-ui/icons'
 import { BioSection, BioYear } from '../components/bio'
 import { IoLogoGithub, IoLogoYoutube } from 'react-icons/io5'
 import thumbYouTube from '../public/images/links/youtube.jpeg'
+import thumbYTLilKitty from '../public/images/links/ytlilkitty.png'
 import Image from 'next/image'
 
 const ProfileImage = chakra(Image, {
@@ -119,7 +120,7 @@ const Home = () => {
         </Heading>
         <List>
           <ListItem>
-            <Link href="https://github.com/erudilumos" target="_blank">
+            <Link href="https://github.com/destnguyxn" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
@@ -135,8 +136,15 @@ const Home = () => {
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
             href="https://www.youtube.com/channel/UCa7k2ySSe-9fkNV3WcoGDgA"
-            title="hoping to make some video here soon..."
+            title="hoping to make more videos soon..."
             thumbnail={thumbYouTube}
+          >
+            
+          </GridItem>
+          <GridItem
+            href="https://www.youtube.com/shorts/TVXjyCdU7rk"
+            title="pet lil kitty"
+            thumbnail={thumbYTLilKitty}
           >
             
           </GridItem>
